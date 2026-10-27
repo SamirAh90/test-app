@@ -1,0 +1,38 @@
+.announcement-bar {
+  background: #17324d;
+  color: white;
+}
+
+.announcement-bar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.announcement-bar__badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.announcement-bar p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .announcement-bar__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

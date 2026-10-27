@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Arabic and Dari use right-to-left layout */
+
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar {
+  direction: rtl;
+}
+
+html[dir="rtl"] .navbar__logo,
+html[dir="rtl"] .navbar__actions,
+html[dir="rtl"] .navbar__links {
+  direction: rtl;
+}
+
+/* Reverse the main two-column layouts */
+
+html[dir="rtl"] .hero-container,
+html[dir="rtl"] .demo-question .container,
+html[dir="rtl"] .cta__container,
+html[dir="rtl"] .footer__container {
+  direction: rtl;
+}
+
+/* Align cards and content to the right */
+
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .hero-card,
+html[dir="rtl"] .demo-question__content,
+html[dir="rtl"] .demo-card,
+html[dir="rtl"] .subject-card,
+html[dir="rtl"] .how-it-works__card,
+html[dir="rtl"] .step-card,
+html[dir="rtl"] .features__card,
+html[dir="rtl"] .faq__item,
+html[dir="rtl"] .disclaimer__content,
+html[dir="rtl"] .footer__brand,
+html[dir="rtl"] .footer__links {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .cta__actions {
+  direction: rtl;
+}
+
+html[dir="rtl"] .demo-header,
+html[dir="rtl"] .footer__bottom-container {
+  direction: rtl;
+}
+
+/* Move the explanation border to the right */
+
+html[dir="rtl"] .demo-explanation {
+  border-left: none;
+  border-right: 4px solid #315c52;
+}
+
+/* Move the FAQ plus/minus symbol to the left */
+
+html[dir="rtl"] .faq__item summary {
+  padding-right: 0;
+  padding-left: 36px;
+}
+
+html[dir="rtl"] .faq__item summary::after {
+  right: auto;
+  left: 0;
+}
+
+/* Footer alignment */
+
+html[dir="rtl"] .footer__links div {
+  align-items: flex-start;
+}
+
+/* Better fonts for Arabic and Dari */
+
+html[lang="ar"] body,
+html[lang="fa"] body {
+  font-family: "Noto Sans Arabic", sans-serif;
+}

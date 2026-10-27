@@ -1,0 +1,17 @@
+.admin-translations__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .admin-translations__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-translations__header button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "navbar": {
+    "home": "Home",
+    "subjects": "Study material",
+    "glossary": "Glossary",
+    "trainer": "Practice",
+    "about": "About the test",
+    "login": "Log in",
+    "brandSubtitle": "Swedish citizenship",
+    "languageLabel": "Choose language"
+  },
+  "announcement": {
+    "badge": "New in 2026",
+    "text": "Prepare for the Swedish citizenship test with practice questions, explanations and translations in your language."
+  },
+  "hero": {
+    "badge": "Prepare for the citizenship test",
+    "titleLine1": "Learn about Sweden.",
+    "titleLine2": "Prepare for the test.",
+    "description": "Read study material and practice questions about Sweden, democracy, law and justice, history and much more. Get clear explanations and translations in your language.",
+    "primaryButton": "Start practicing",
+    "secondaryButton": "Explore study material",
+    "previewSubject": "Sweden as a country",
+    "previewQuestion": "What is the capital of Sweden?",
+    "previewAnswers": {
+      "a": "Gothenburg",
+      "b": "Stockholm",
+      "c": "Malmö",
+      "d": "Uppsala"
+    }
+  },
+  "stats": {
+    "questions": "questions in the test",
+    "minutes": "minutes",
+    "answers": "answer choices",
+    "languages": "languages"
+  },
+  "subjects": {
+    "eyebrow": "13 subjects",
+    "title": "Study material",
+    "description": "Read the study material for each subject before you start practicing.",
+    "start": "Read more",
+    "showAll": "View all study material",
+    "items": {
+      "country": {
+        "name": "Sweden as a country",
+        "description": "Geography, nature, climate and Sweden's administrative divisions."
+      },
+      "democracy": {
+        "name": "Sweden's democratic system",
+        "description": "Democracy, government by the people and how democracy is protected."
+      },
+      "government": {
+        "name": "How Sweden is governed",
+        "description": "The Riksdag, the Government, regions and municipalities."
+      },
+      "elections": {
+        "name": "Political elections and parties",
+        "description": "Voting rights, elections and political parties."
+      },
+      "law": {
+        "name": "Law and justice",
+        "description": "Fundamental laws, courts and the rule of law."
+      },
+      "media": {
+        "name": "The role of the media",
+        "description": "Free media, journalism and the spread of information."
+      },
+      "rights": {
+        "name": "Human rights",
+        "description": "Fundamental rights and freedoms in Sweden."
+      },
+      "economy": {
+        "name": "The labour market and personal finance",
+        "description": "Work, income and managing personal finances."
+      },
+      "welfare": {
+        "name": "The welfare society",
+        "description": "Education, healthcare and social care."
+      },
+      "history": {
+        "name": "Sweden's modern history",
+        "description": "Important events in Sweden's modern development."
+      },
+      "world": {
+        "name": "Sweden and the wider world",
+        "description": "Sweden's international cooperation and relations."
+      },
+      "religion": {
+        "name": "A secular state and a multi-religious country",
+        "description": "Religion, freedom of religion and Sweden as a secular state."
+      },
+      "traditions": {
+        "name": "Traditions and holidays",
+        "description": "Swedish traditions, celebrations and holidays."
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "A simple path from learning to better results",
+    "description": "MedborgaTest helps you read the material, practice step by step and receive clear feedback.",
+    "steps": {
+      "one": {
+        "title": "Choose a subject",
+        "description": "Choose one of the 13 subjects and read the related study material."
+      },
+      "two": {
+        "title": "Answer questions",
+        "description": "Practice with clear multiple-choice questions that resemble the format of the citizenship test."
+      },
+      "three": {
+        "title": "Get instant feedback",
+        "description": "See whether your answer is correct or incorrect and read a simple explanation immediately."
+      },
+      "four": {
+        "title": "Learn in your language",
+        "description": "Display translations in English, Arabic or Dari while the Swedish text always remains visible."
+      }
+    }
+  },
+  "demo": {
+    "eyebrow": "Try a question",
+    "title": "See how MedborgaTest works",
+    "description": "Every question includes clear answer choices, explanations and the option to display translations in your language.",
+    "questionProgress": "Question 1 of 20",
+    "showTranslation": "Show translation",
+    "subject": "Sweden as a country",
+    "question": "What is the capital of Sweden?",
+    "answers": {
+      "a": "Gothenburg",
+      "b": "Stockholm",
+      "c": "Malmö",
+      "d": "Uppsala"
+    },
+    "explanationTitle": "Explanation",
+    "explanation": "Stockholm is the capital of Sweden and is located in the province of Uppland."
+  },
+  "features": {
+    "eyebrow": "Why MedborgaTest",
+    "title": "Everything you need to learn and practice more effectively",
+    "description": "MedborgaTest combines study material, clear questions, translations and feedback in a simple and modern learning platform.",
+    "items": {
+      "translations": {
+        "title": "Translations in several languages",
+        "description": "Display questions, answers and explanations in English, Arabic or Dari while the Swedish text always remains visible."
+      },
+      "feedback": {
+        "title": "Instant feedback",
+        "description": "See immediately whether your answer is correct or incorrect and receive a clear explanation after every question."
+      },
+      "subjects": {
+        "title": "Learn by subject",
+        "description": "Choose one of the 13 subjects, read the study material and then practice questions from the same subject."
+      },
+      "progress": {
+        "title": "Track your progress",
+        "description": "View your results, identify weaker areas and continue practicing where needed."
+      },
+      "simulator": {
+        "title": "Test simulator",
+        "description": "Prepare with a format that resembles the questions, pace and structure of the real test."
+      },
+      "repeat": {
+        "title": "Repeat incorrect answers",
+        "description": "Save incorrect answers and practice them again until you feel confident."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Common questions",
+    "description": "Here you can find answers to some of the most common questions about MedborgaTest.",
+    "items": {
+      "whatIs": {
+        "question": "What is MedborgaTest?",
+        "answer": "MedborgaTest is a learning platform where you can read study material and prepare for the Swedish citizenship test using questions, explanations and translations."
+      },
+      "languages": {
+        "question": "Which languages are available?",
+        "answer": "Swedish is the original language. Questions and explanations can also be displayed with support in English, Arabic and Dari."
+      },
+      "subjects": {
+        "question": "Can I study and practice by subject?",
+        "answer": "Yes. You can choose from 13 subjects, read the study material and then practice questions from the same subject."
+      },
+      "feedback": {
+        "question": "Will I learn why an answer is correct or incorrect?",
+        "answer": "Yes. After answering, you receive immediate feedback and a clear explanation."
+      },
+      "simulator": {
+        "question": "Will there be a test simulator?",
+        "answer": "Yes. A test simulator with a timer, results and statistics will be added in a later phase of the platform."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Start today",
+    "title": "Ready to prepare for the citizenship test?",
+    "description": "Read the study material, choose a subject, answer questions and receive clear explanations and translations immediately.",
+    "primaryButton": "Start practicing",
+    "secondaryButton": "Explore study material"
+  },
+  "disclaimer": {
+    "eyebrow": "Important information",
+    "title": "Disclaimer",
+    "paragraph1": "MedborgaTest is an independent study service designed to help users prepare for the Swedish citizenship test.",
+    "paragraph2": "We are not affiliated with, approved by, endorsed by or associated with the Swedish Council for Higher Education (UHR), the Swedish Migration Agency, the Swedish National Agency for Education or any other Swedish authority.",
+    "paragraph3": "All practice questions, explanations and translations are developed independently for educational purposes and are based on publicly available study materials, including Sweden in Focus, together with other public information.",
+    "paragraph4": "The questions are not the official examination questions, and MedborgaTest does not guarantee a passing result on the official citizenship test. Always check the latest information from UHR and the Swedish Migration Agency."
+  },
+  "footer": {
+    "description": "Prepare for the citizenship test with study material, Swedish questions, clear explanations and support in several languages.",
+    "sections": {
+      "practice": {
+        "title": "Learn and practice",
+        "subjects": "Study material",
+        "glossary": "Glossary",
+        "start": "Start practicing",
+        "simulator": "Test simulator",
+        "repeat": "Repeat incorrect answers"
+      },
+      "about": {
+        "title": "MedborgaTest",
+        "service": "About the service",
+        "test": "About the test",
+        "faq": "Frequently asked questions",
+        "contact": "Contact"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy policy",
+        "terms": "Terms of use",
+        "cookies": "Cookie settings"
+      }
+    },
+    "copyright": "© 2026 MedborgaTest. All rights reserved.",
+    "independent": "Independent study service — not affiliated with any government authority."
+  }
+}

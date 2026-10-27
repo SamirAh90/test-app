@@ -1,0 +1,252 @@
+{
+  "navbar": {
+    "home": "Hem",
+    "subjects": "Studiematerial",
+    "glossary": "Begrepp",
+    "trainer": "Träna",
+    "about": "Om provet",
+    "login": "Logga in",
+    "brandSubtitle": "Svenskt medborgarskap",
+    "languageLabel": "Välj språk"
+  },
+  "announcement": {
+    "badge": "Nytt 2026",
+    "text": "Öva 0 kjhkjh;o inför det svenska medborgarskapsprovet med frågor, förklaringar och översättningar på ditt språk."
+  },
+  "hero": {
+    "badge": "Förbered dig för medborgarskapsprovet",
+    "titleLine1": "Lär dig om Sverige.",
+    "titleLine2": "Träna inför provet.",
+    "description": "Öva på frågor om Sverige, demokrati, lag och rätt, historia och mycket mer. Få tydliga förklaringar och översättningar på ditt språk.",
+    "primaryButton": "Börja träna",
+    "secondaryButton": "Utforska studiematerial",
+    "previewSubject": "Landet Sverige",
+    "previewQuestion": "Vilken är Sveriges huvudstad?",
+    "previewAnswers": {
+      "a": "Göteborg",
+      "b": "Stockholm",
+      "c": "Malmö",
+      "d": "Uppsala"
+    }
+  },
+  "stats": {
+    "questions": "frågor i provet",
+    "minutes": "minuter",
+    "answers": "svarsalternativ",
+    "languages": "språk"
+  },
+  "subjects": {
+    "eyebrow": "13 ämnen",
+    "title": "Studiematerial",
+    "description": "Läs studiematerialet för varje ämne innan du börjar träna.",
+    "start": "Läs mer",
+    "showAll": "Visa allt studiematerial",
+
+    "items": {
+      "country": {
+        "name": "Landet Sverige",
+        "description": "Geografi, natur, klimat och Sveriges indelning."
+      },
+
+      "democracy": {
+        "name": "Sveriges demokratiska system",
+        "description": "Demokrati, folkstyre och hur demokratin skyddas."
+      },
+
+      "government": {
+        "name": "Så här styrs Sverige",
+        "description": "Riksdag, regering, regioner och kommuner."
+      },
+
+      "elections": {
+        "name": "Politiska val och partier",
+        "description": "Rösträtt, val och de politiska partierna."
+      },
+
+      "law": {
+        "name": "Lag och rätt",
+        "description": "Grundlagar, domstolar och rättssäkerhet."
+      },
+
+      "media": {
+        "name": "Mediernas roll",
+        "description": "Fria medier, journalistik och informationsspridning."
+      },
+
+      "rights": {
+        "name": "Mänskliga rättigheter",
+        "description": "Fri- och rättigheter i Sverige."
+      },
+
+      "economy": {
+        "name": "Arbetsmarknad och privatekonomi",
+        "description": "Arbete, ekonomi och att hantera sin privatekonomi."
+      },
+
+      "welfare": {
+        "name": "Välfärdssamhället",
+        "description": "Skola, vård och omsorg."
+      },
+
+      "history": {
+        "name": "Sveriges moderna historia",
+        "description": "Viktiga händelser i Sveriges moderna utveckling."
+      },
+
+      "world": {
+        "name": "Sverige och omvärlden",
+        "description": "Sveriges internationella samarbeten."
+      },
+
+      "religion": {
+        "name": "En sekulär stat och ett mångreligiöst land",
+        "description": "Religion, religionsfrihet och Sveriges sekulära stat."
+      },
+
+      "traditions": {
+        "name": "Traditioner och högtider",
+        "description": "Svenska traditioner och högtider."
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Så fungerar det",
+    "title": "En enkel väg från träning till bättre resultat",
+    "description": "MedborgaTest hjälper dig att förstå innehållet, träna steg för steg och få tydlig återkoppling.",
+    "steps": {
+      "one": {
+        "title": "Välj ett ämne",
+        "description": "Börja med ett av de 13 ämnena och fokusera på det område du vill träna på."
+      },
+      "two": {
+        "title": "Svara på frågor",
+        "description": "Träna med tydliga flervalsfrågor som liknar upplägget i medborgarskapsprovet."
+      },
+      "three": {
+        "title": "Få direkt feedback",
+        "description": "Se om svaret är rätt eller fel och läs en enkel förklaring direkt."
+      },
+      "four": {
+        "title": "Lär på ditt språk",
+        "description": "Visa översättningar på engelska, arabiska eller dari medan svenskan alltid finns kvar."
+      }
+    }
+  },
+  "demo": {
+    "eyebrow": "Prova en fråga",
+    "title": "Se hur MedborgaTest fungerar",
+    "description": "Alla frågor innehåller tydliga svarsalternativ, förklaringar och möjlighet att visa översättningar på ditt språk.",
+    "questionProgress": "Fråga 1 av 20",
+    "showTranslation": "Visa översättning",
+    "subject": "Landet Sverige",
+    "question": "Vilken är Sveriges huvudstad?",
+    "answers": {
+      "a": "Göteborg",
+      "b": "Stockholm",
+      "c": "Malmö",
+      "d": "Uppsala"
+    },
+    "explanationTitle": "Förklaring",
+    "explanation": "Stockholm är Sveriges huvudstad och ligger i landskapet Uppland."
+  },
+  "features": {
+    "eyebrow": "Därför MedborgaTest",
+    "title": "Allt du behöver för att träna smartare",
+    "description": "MedborgaTest kombinerar tydliga frågor, översättningar och återkoppling i en enkel och modern studieplattform.",
+    "items": {
+      "translations": {
+        "title": "Översättningar på flera språk",
+        "description": "Visa frågor, svar och förklaringar på engelska, arabiska eller dari samtidigt som svenskan alltid finns kvar."
+      },
+      "feedback": {
+        "title": "Direkt återkoppling",
+        "description": "Se direkt om ditt svar är rätt eller fel och få en tydlig förklaring efter varje fråga."
+      },
+      "subjects": {
+        "title": "Träna efter ämne",
+        "description": "Välj mellan 13 ämnen och fokusera på de områden där du behöver mest träning."
+      },
+      "progress": {
+        "title": "Följ dina framsteg",
+        "description": "Se dina resultat, upptäck svaga områden och fortsätt träna där det behövs."
+      },
+      "simulator": {
+        "title": "Provsimulator",
+        "description": "Förbered dig med ett upplägg som efterliknar provets frågor, tempo och struktur."
+      },
+      "repeat": {
+        "title": "Repetera fel",
+        "description": "Spara felaktiga svar och träna på dem igen tills du känner dig säker."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Vanliga frågor",
+    "title": "Det här undrar många",
+    "description": "Här hittar du svar på några av de vanligaste frågorna om MedborgaTest.",
+    "items": {
+      "whatIs": {
+        "question": "Vad är MedborgaTest?",
+        "answer": "MedborgaTest är en studieplattform där du kan träna inför det svenska medborgarskapsprovet med frågor, förklaringar och översättningar."
+      },
+      "languages": {
+        "question": "Vilka språk finns?",
+        "answer": "Svenska är originalspråket. Frågor och förklaringar kan visas med stöd på engelska, arabiska och dari."
+      },
+      "subjects": {
+        "question": "Kan jag träna efter ämne?",
+        "answer": "Ja. Du kan välja mellan 13 ämnen och fokusera på de områden där du behöver mest träning."
+      },
+      "feedback": {
+        "question": "Får jag veta varför ett svar är rätt eller fel?",
+        "answer": "Ja. Efter att du svarat får du direkt återkoppling och en tydlig förklaring."
+      },
+      "simulator": {
+        "question": "Kommer det att finnas en provsimulator?",
+        "answer": "Ja. En provsimulator med timer, resultat och statistik kommer att byggas som en senare del av plattformen."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Börja idag",
+    "title": "Redo att börja träna inför medborgarskapsprovet?",
+    "description": "Välj ett ämne, svara på frågor och få tydliga förklaringar och översättningar direkt.",
+    "primaryButton": "Börja träna",
+    "secondaryButton": "Utforska studiematerial"
+  },
+  "disclaimer": {
+    "eyebrow": "Viktig information",
+    "title": "Ansvarsfriskrivning",
+    "paragraph1": "MedborgaTest är en fristående studietjänst som hjälper användare att förbereda sig inför det svenska medborgarskapsprovet.",
+    "paragraph2": "Vi är inte anslutna till, godkända av eller på något sätt associerade med Universitets- och högskolerådet (UHR), Migrationsverket, Skolverket eller någon annan svensk myndighet.",
+    "paragraph3": "Alla övningsfrågor, förklaringar och översättningar har tagits fram självständigt i utbildningssyfte och bygger på offentligt tillgängligt studiematerial, däribland Sverige i fokus, samt annan offentlig information.",
+    "paragraph4": "Frågorna är inte de officiella provfrågorna och MedborgaTest garanterar inte ett godkänt resultat på det officiella medborgarskapsprovet. Kontrollera alltid den senaste informationen hos UHR och Migrationsverket."
+  },
+  "footer": {
+    "description": "Träna inför medborgarskapsprovet med svenska frågor, tydliga förklaringar och stöd på flera språk.",
+    "sections": {
+      "practice": {
+        "title": "Träna",
+        "subjects": "Studiematerial",
+        "start": "Börja träna",
+        "simulator": "Provsimulator",
+        "repeat": "Repetera fel"
+      },
+      "about": {
+        "title": "MedborgaTest",
+        "service": "Om tjänsten",
+        "test": "Om provet",
+        "faq": "Vanliga frågor",
+        "contact": "Kontakt"
+      },
+      "legal": {
+        "title": "Juridiskt",
+        "privacy": "Integritetspolicy",
+        "terms": "Användarvillkor",
+        "cookies": "Cookieinställningar"
+      }
+    },
+    "copyright": "© 2026 MedborgaTest. Alla rättigheter förbehållna.",
+    "independent": "Fristående studietjänst – inte kopplad till någon myndighet."
+  }
+}

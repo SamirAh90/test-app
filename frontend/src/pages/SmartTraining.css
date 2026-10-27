@@ -1,0 +1,663 @@
+.smart-training {
+  min-height: calc(100vh - 70px);
+  background: #f6f8fa;
+  padding: 28px 20px 60px;
+}
+
+.smart-training__container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* -------------------------------- */
+/* Back button                      */
+/* -------------------------------- */
+
+.smart-training__back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  margin-bottom: 24px;
+  padding: 9px 13px;
+
+  border: 1px solid #d9e2e8;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #334155;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.smart-training__back-button:hover {
+  background: #f8fafc;
+  border-color: #c8d4dc;
+}
+
+/* -------------------------------- */
+/* Header                           */
+/* -------------------------------- */
+
+.smart-training__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.smart-training__header h1 {
+  margin: 5px 0 7px;
+
+  color: #0f172a;
+
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.smart-training__header p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.smart-training__eyebrow {
+  color: #15805d;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+}
+
+.smart-training__header-badge {
+  flex-shrink: 0;
+
+  padding: 9px 13px;
+
+  border: 1px solid #d7e8e3;
+  border-radius: 10px;
+
+  background: #f2faf7;
+  color: #15745a;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* -------------------------------- */
+/* Subjects card                    */
+/* -------------------------------- */
+
+.smart-training__subjects-card {
+  padding: 24px;
+
+  border: 1px solid #dde5eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.smart-training__section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+.smart-training__section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #edf8f4;
+
+  font-size: 22px;
+}
+
+.smart-training__title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.smart-training__title-row h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 20px;
+}
+
+.smart-training__section-heading p {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.smart-training__weak-badge {
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  background: #edf8f4;
+  color: #15805d;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* -------------------------------- */
+/* Subject rows                     */
+/* -------------------------------- */
+
+.smart-training__subject-list {
+  display: grid;
+  gap: 10px;
+}
+
+.smart-training__subject-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  min-height: 88px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #e1e8ed;
+  border-radius: 13px;
+
+  background: #ffffff;
+}
+
+.smart-training__subject-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.smart-training__subject-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f1f8f5;
+
+  font-size: 18px;
+}
+
+.smart-training__subject-info {
+  min-width: 0;
+}
+
+.smart-training__subject-info h3 {
+  margin: 0 0 8px;
+
+  color: #0f172a;
+
+  font-size: 15px;
+}
+
+.smart-training__subject-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.smart-training__subject-stats > span {
+  padding-right: 13px;
+  margin-right: 13px;
+
+  border-right: 1px solid #e2e8f0;
+}
+
+.smart-training__subject-stats > span:last-child {
+  padding-right: 0;
+  margin-right: 0;
+
+  border-right: none;
+}
+
+.smart-training__percentage {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.smart-training__wrong-stat {
+  color: #b45309;
+  font-weight: 700;
+}
+
+/* -------------------------------- */
+/* Progress                         */
+/* -------------------------------- */
+
+.smart-training__progress-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 210px;
+
+  flex-shrink: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.smart-training__progress-track {
+  position: relative;
+
+  flex: 1;
+
+  height: 7px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #e8edf1;
+}
+
+.smart-training__progress-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  transition: width 0.3s ease;
+}
+
+.smart-training__performance--low {
+  color: #dc2626;
+}
+
+.smart-training__progress-fill.smart-training__performance--low {
+  background: #dc2626;
+}
+
+.smart-training__performance--medium {
+  color: #d97706;
+}
+
+.smart-training__progress-fill.smart-training__performance--medium {
+  background: #f59e0b;
+}
+
+.smart-training__performance--good {
+  color: #15805d;
+}
+
+.smart-training__progress-fill.smart-training__performance--good {
+  background: #15805d;
+}
+
+/* -------------------------------- */
+/* Training session card            */
+/* -------------------------------- */
+
+.smart-training__session-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 16px;
+  padding: 20px 22px;
+
+  border: 1px solid #cfe8de;
+  border-radius: 16px;
+
+  background: #f5fbf8;
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.smart-training__session-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e8f6f0;
+
+  font-size: 22px;
+}
+
+.smart-training__session-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.smart-training__session-content h2 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 18px;
+}
+
+.smart-training__session-stats {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.smart-training__session-stat {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.smart-training__session-stat-icon {
+  font-size: 17px;
+}
+
+.smart-training__session-stat div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.smart-training__session-stat span {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.smart-training__session-stat strong {
+  color: #0f172a;
+
+  font-size: 13px;
+}
+
+.smart-training__session-divider {
+  width: 1px;
+  height: 34px;
+
+  background: #d6e4de;
+}
+
+/* -------------------------------- */
+/* Primary button                   */
+/* -------------------------------- */
+
+.smart-training__primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 42px;
+
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #15805d;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.smart-training__primary-button:hover:not(:disabled) {
+  background: #116a4d;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 8px 20px rgba(21, 128, 93, 0.18);
+}
+
+.smart-training__primary-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.smart-training__start-button {
+  flex-shrink: 0;
+
+  min-width: 190px;
+}
+
+/* -------------------------------- */
+/* Information card                 */
+/* -------------------------------- */
+
+.smart-training__info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 16px;
+  padding: 14px 16px;
+
+  border: 1px solid #d8e5ed;
+  border-radius: 12px;
+
+  background: #f7fafc;
+}
+
+.smart-training__info-icon {
+  color: #2563eb;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.smart-training__info-card strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #334155;
+
+  font-size: 12px;
+}
+
+.smart-training__info-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* -------------------------------- */
+/* Loading / empty                  */
+/* -------------------------------- */
+
+.smart-training__message-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 26px;
+
+  border: 1px solid #dde5eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.smart-training__loading-icon,
+.smart-training__message-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #edf8f4;
+
+  font-size: 23px;
+}
+
+.smart-training__message-card h1 {
+  margin: 0 0 7px;
+
+  color: #0f172a;
+}
+
+.smart-training__message-card p {
+  margin: 0 0 10px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+.smart-training__active-heading {
+  margin-bottom: 18px;
+}
+
+.smart-training__active-heading h1 {
+  margin: 5px 0 7px;
+
+  color: #0f172a;
+}
+
+.smart-training__active-heading p {
+  margin: 0;
+
+  color: #64748b;
+}
+
+/* -------------------------------- */
+/* Responsive                       */
+/* -------------------------------- */
+
+@media (max-width: 850px) {
+  .smart-training__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .smart-training__subject-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .smart-training__progress-area {
+    width: 100%;
+  }
+
+  .smart-training__session-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .smart-training__start-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .smart-training {
+    padding: 20px 14px 40px;
+  }
+
+  .smart-training__subjects-card {
+    padding: 18px;
+  }
+
+  .smart-training__section-heading {
+    align-items: flex-start;
+  }
+
+  .smart-training__session-stats {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .smart-training__session-divider {
+    display: none;
+  }
+
+  .smart-training__subject-stats {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .smart-training__subject-stats > span {
+    padding-right: 0;
+    margin-right: 0;
+
+    border-right: none;
+  }
+
+  .smart-training__header h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,579 @@
+/* ================================================= */
+/* Trainer Header                                    */
+/* ================================================= */
+
+.trainer-header {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ================================================= */
+/* Container                                         */
+/* ================================================= */
+
+.trainer-header__container {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 72px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 28px;
+}
+
+/* ================================================= */
+/* Left                                              */
+/* ================================================= */
+
+.trainer-header__left {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  flex-shrink: 0;
+}
+
+/* ================================================= */
+/* Brand                                             */
+/* ================================================= */
+
+.trainer-header__brand {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+.trainer-header__brand img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+}
+
+.trainer-header__brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainer-header__brand strong {
+  color: var(--color-text);
+
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+
+  white-space: nowrap;
+}
+
+.trainer-header__brand span {
+  margin-top: 3px;
+
+  color: var(--color-text-muted);
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+/* ================================================= */
+/* Home                                              */
+/* ================================================= */
+
+.trainer-header__home {
+  position: relative;
+
+  padding: 10px 2px;
+
+  color: #475569;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.trainer-header__home:hover {
+  color: var(--color-accent);
+}
+
+.trainer-header__home::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 3px;
+
+  height: 2px;
+
+  border-radius: 999px;
+
+  background: var(--color-accent);
+
+  transform: scaleX(0);
+
+  transition: transform 0.2s ease;
+}
+
+.trainer-header__home:hover::after {
+  transform: scaleX(1);
+}
+
+/* ================================================= */
+/* Right controls                                    */
+/* ================================================= */
+
+.trainer-header__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+/* ================================================= */
+/* Labels                                            */
+/* ================================================= */
+
+.trainer-header__language-box,
+.trainer-header__translation-box {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.trainer-header__control-label {
+  color: var(--color-text-muted);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* ================================================= */
+/* Fixed Swedish language                            */
+/* ================================================= */
+
+.trainer-header__fixed-language {
+  min-width: 96px;
+  height: 38px;
+
+  padding: 0 13px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+
+  background: #f8fafc;
+  color: var(--color-text);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* ================================================= */
+/* Translation selector                              */
+/* ================================================= */
+
+.trainer-header__translation-box select {
+  min-width: 150px;
+  height: 38px;
+
+  padding: 0 32px 0 11px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+  color: var(--color-text);
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.trainer-header__translation-box select:hover {
+  border-color: #b8d4cc;
+}
+
+.trainer-header__translation-box select:focus {
+  border-color: var(--color-accent);
+
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+}
+
+/* ================================================= */
+/* Login / Account                                   */
+/* ================================================= */
+
+.trainer-header__account {
+  min-height: 38px;
+
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: var(--color-primary);
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.trainer-header__account:hover {
+  background: var(--color-primary-hover);
+
+  transform: translateY(-1px);
+}
+
+/* ================================================= */
+/* Logged-in account                                 */
+/* ================================================= */
+
+.trainer-header__account--logged-in {
+  padding: 4px 10px 4px 5px;
+
+  border: 1px solid #dce6e3;
+
+  background: #ffffff;
+  color: var(--color-text);
+}
+
+.trainer-header__account--logged-in:hover {
+  border-color: #b8d4cc;
+
+  background: #f4faf8;
+}
+
+.trainer-header__avatar {
+  width: 29px;
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eaf5f2;
+  color: var(--color-accent);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.trainer-header__account-name {
+  max-width: 90px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trainer-header__account-arrow {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+/* ================================================= */
+/* Tablet                                            */
+/* ================================================= */
+
+@media (max-width: 950px) {
+  .trainer-header__container {
+    width: calc(100% - 32px);
+
+    padding: 12px 0;
+
+    align-items: flex-start;
+  }
+
+  .trainer-header__left {
+    gap: 18px;
+  }
+
+  .trainer-header__brand span {
+    display: none;
+  }
+
+  .trainer-header__control-label {
+    display: none;
+  }
+
+  .trainer-header__fixed-language {
+    min-width: 90px;
+  }
+
+  .trainer-header__translation-box select {
+    min-width: 135px;
+  }
+}
+
+/* ================================================= */
+/* Mobile                                            */
+/* ================================================= */
+
+@media (max-width: 680px) {
+  .trainer-header__container {
+    width: calc(100% - 24px);
+
+    padding: 11px 0 12px;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    grid-template-areas:
+      "brand home"
+      "controls controls";
+
+    gap: 10px 12px;
+  }
+
+  /* -------------------------------- */
+  /* Top mobile row                   */
+  /* -------------------------------- */
+
+  .trainer-header__left {
+    display: contents;
+  }
+
+  .trainer-header__brand {
+    grid-area: brand;
+
+    gap: 8px;
+  }
+
+  .trainer-header__brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .trainer-header__brand strong {
+    font-size: 16px;
+  }
+
+  .trainer-header__brand span {
+    display: none;
+  }
+
+  .trainer-header__home {
+    grid-area: home;
+
+    align-self: center;
+
+    padding: 8px 10px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    font-size: 12px;
+  }
+
+  .trainer-header__home::after {
+    display: none;
+  }
+
+  /* -------------------------------- */
+  /* Bottom mobile row                */
+  /* -------------------------------- */
+
+  .trainer-header__controls {
+    grid-area: controls;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+      minmax(78px, 0.8fr)
+      minmax(125px, 1.35fr)
+      auto;
+
+    gap: 7px;
+  }
+
+  .trainer-header__language-box,
+  .trainer-header__translation-box {
+    width: 100%;
+  }
+
+  .trainer-header__fixed-language {
+    width: 100%;
+    min-width: 0;
+    height: 38px;
+
+    padding: 0 9px;
+
+    justify-content: center;
+
+    font-size: 12px;
+  }
+
+  .trainer-header__translation-box select {
+    width: 100%;
+    min-width: 0;
+    height: 38px;
+
+    padding-left: 9px;
+    padding-right: 25px;
+
+    font-size: 12px;
+  }
+
+  .trainer-header__account {
+    min-width: 74px;
+    min-height: 38px;
+
+    padding: 0 11px;
+
+    font-size: 12px;
+  }
+
+  .trainer-header__account--logged-in {
+    min-width: auto;
+
+    padding: 4px 7px 4px 4px;
+  }
+
+  .trainer-header__avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .trainer-header__account-name {
+    display: none;
+  }
+
+  .trainer-header__account-arrow {
+    display: none;
+  }
+}
+
+/* ================================================= */
+/* Small phones                                      */
+/* ================================================= */
+
+@media (max-width: 390px) {
+  .trainer-header__container {
+    width: calc(100% - 18px);
+  }
+
+  .trainer-header__brand img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .trainer-header__brand strong {
+    font-size: 15px;
+  }
+
+  .trainer-header__controls {
+    grid-template-columns:
+      74px
+      minmax(110px, 1fr)
+      auto;
+
+    gap: 5px;
+  }
+
+  .trainer-header__fixed-language {
+    padding: 0 6px;
+
+    font-size: 11px;
+  }
+
+  .trainer-header__translation-box select {
+    padding-left: 7px;
+
+    font-size: 11px;
+  }
+
+  .trainer-header__account {
+    min-width: 66px;
+
+    padding: 0 8px;
+
+    font-size: 11px;
+  }
+}
+/* -------------------------------- */
+/* Trainer translation selector     */
+/* -------------------------------- */
+
+.navbar__language--translation {
+  min-width: 145px;
+}
+
+@media (max-width: 650px) {
+  .navbar__language--translation {
+    width: 126px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__language--translation {
+    width: 112px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar__language--translation {
+    width: 104px;
+  }
+}

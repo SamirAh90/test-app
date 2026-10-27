@@ -1,0 +1,347 @@
+Remember 
+
+1:  One thing I noticed
+
+Your answers are returned in reverse ID order:
+
+Uppsala
+Malmö
+Stockholm
+Göteborg
+
+That's not an error. We can later explicitly control the answer order when we build the quiz interface.
+
+
+2: change in actuell deplopymnet form await const PORT = process.env.PORT || 5000;
+
+const startServer = async () => {
+  await connectDatabase();
+
+  await sequelize.sync();
+
+  console.log("✅ Database tables synchronized Samir!");
+
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
+};
+
+startServer();
+
+3:
+frontend/src/components/SubjectCard.jsx
+Later instead of static data:
+
+<SubjectCard 
+  subject="Landet Sverige"
+  questions={45}
+/>
+
+we will get:
+
+GET /api/subjects
+
+and render:
+
+subjects.map((item)=>(
+  <SubjectCard
+    key={item.id}
+    subject={item.name}
+    questions={item.questionCount}
+  />
+))
+
+4>
+
+Why we're doing it this way
+
+Notice that today the data is:
+
+const subjects = [...]
+
+In the next step, we'll replace that with your backend:
+
+const subjects = await getSubjects();
+
+The UI won't change at all. Only the data source changes.
+
+That's the advantage of building reusable components first and connecting them to the backend afterward.
+
+5> Then RTL support
+
+Arabic and Dari shouldn't just change the text.
+
+The whole layout should mirror.
+
+For example:
+
+Swedish:
+
+Logo                 Menu                 Login
+
+Arabic:
+
+Login                Menu                 Logo
+
+Cards, buttons, spacing, icons, and text alignment should all feel natural for RTL users.
+
+We'll build that after all sections are translated.
+
+6:
+I also noticed one thing
+
+Your answer order is:
+
+A Uppsala
+B Malmö
+C Stockholm
+D Göteborg
+
+This is because the answers are being returned in database order. If you always want the original order, we should add ordering in the backend later (for example with a position field or ORDER BY id). We can leave that for now.
+
+7: 
+
+Before starting login, one small improvement is worth making: your registration page currently shows success text but stays on the same page. After login exists, registration should either sign the user in automatically or redirect them to /login. I recommend automatic login after registration later, but first we need the token system.
+
+8>
+
+When the Dashboard page is created, change only this line:
+
+navigate("/trainer");
+
+to:
+
+navigate("/dashboard");
+
+9> So I would keep:
+
+.dashboard-page
+.dashboard-card
+.dashboard-button
+
+even though the page is called Min träning.
+
+This is very common in production projects. Internal class names don't have to match the marketing name shown to users.
+
+Once you've updated the routes and redirects, we'll start designing Min träning as a real learning home instead of the temporary dashboard. I think that's where MedborgaTest will really begin to feel like a polished product.
+
+10: add all 12 ämne I recommend building the Begrepp page next, because all the data is already available. It will complete the study experience before we start populating the remaining 12 subjects.
+
+11: 
+
+???????????????????????????
+Phase 2
+📚 Sources
+
+Each subject should have:
+
+Source 1
+Source 2
+Source 3
+
+Example:
+
+Migrationsverket
+https://...
+
+Regeringen
+https://...
+
+Skolverket
+https://...
+
+You already have the table.
+
+Just build CRUD.
+
+Phase 3
+👥 Users
+
+Admin page:
+
+ID
+Name
+Email
+Role
+Premium
+Questions answered
+Created
+
+Actions
+
+View
+Deactivate
+Delete
+Phase 4
+📊 Dashboard
+
+Replace fake cards with real numbers.
+
+13 Subjects
+
+4 Study materials missing
+
+680 Questions
+
+2720 Answers
+
+418 Glossary terms
+
+184 Users
+
+93 Premium users
+
+Live statistics.
+
+Phase 5
+📈 Analytics
+
+Charts
+
+Questions per subject
+
+Users per day
+
+Most failed questions
+
+Average score
+
+Premium conversions
+?????????????????
+Lets
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+One important note: your current public login function does not check isActive, while your admin login does. We should fix the public login after the admin user routes are connected, otherwise a deactivated ordinary user could still log in.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Excellent. 🎉
+
+At this point your Admin Portal MVP is essentially complete.
+
+✅ What you've built
+Dashboard
+Subjects
+Study Materials
+Sources
+Glossary
+Questions
+Translations
+Users
+Analytics
+Settings
+Authentication
+Roles (Admin / Editor)
+
+This is a very solid administration system.
+
+Before moving on
+
+I would do one small improvement.
+
+Add System Information to Settings
+
+At the bottom of the Settings page add a card like this:
+
+System Information
+
+Frontend Version
+v1.0.0
+
+Backend Version
+v1.0.0
+
+Database
+MySQL
+
+Environment
+Development
+
+Node.js
+v24.x
+
+Total Questions
+742
+
+Total Subjects
+13
+
+Total Users
+41
+
+Total Premium Users
+8
+
+Storage Used
+45 MB
+
+It makes the admin feel much more professional.
+
+Add Database Backup
+
+Another useful admin feature:
+
+Database
+
+✓ Download Backup
+
+✓ Restore Backup
+
+Last Backup
+2026-08-06 13:22
+
+Status
+Healthy
+
+Very useful later.
+
+Add System Health
+
+Another small card:
+
+System Health
+
+API
+🟢 Online
+
+Database
+🟢 Connected
+
+Storage
+🟢 Healthy
+
+Analytics
+🟢 Running
+
+Background Jobs
+🟢 Running
+Then the Admin Portal is basically finished.
+
+I would rate it around 95% complete.
+
+The remaining 5% are "nice-to-have" features like audit logs, notifications, and advanced maintenance tools.
+
+After that, we switch to the public application.
+
+That is where the biggest value is for MedborgaTest.
+
+We'll build:
+
+✅ Demo Trainer (15 questions)
+User registration
+Login
+User dashboard
+Subject training
+Full exam simulator
+Results page
+Premium payment
+Progress & statistics
+AI recommendations ("Train more on Democracy")
+
+That is the part your customers will use every day.
+
+I recommend we finish the last polish on the Admin Portal (System Information + Health + Backup), and then focus entirely on the public application. That's where the product becomes truly usable and ready for real users.
