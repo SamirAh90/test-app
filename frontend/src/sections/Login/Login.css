@@ -125,6 +125,54 @@
   line-height: 1.4;
 }
 
+.login-password-help {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.login-email-link {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.login-email-link summary {
+  cursor: pointer;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.login-email-link summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.login-email-link__status { margin: 0; }
+.login-email-confirm { max-width: 540px; margin: 0 auto; }
+.login-email-confirm > .login-button { width: 100%; }
+.login-email-confirm > p { line-height: 1.6; margin-top: 20px; }
+
+.login-password-help summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.login-password-help summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+.login-password-help p {
+  margin: 8px 0 0;
+}
+
 .login-button {
   min-height: 48px;
   padding: 0 20px;

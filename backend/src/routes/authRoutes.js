@@ -19,6 +19,11 @@ const router = express.Router();
 router.post("/register", register);
 
 router.post("/login", login);
+router.post("/google", require("../controllers/googleAuthController").googleLogin);
+const loginLink = require("../controllers/loginLinkController");
+const loginLinkLimit = require("../middlewares/loginLinkLimit");
+router.post("/email-link", loginLinkLimit, loginLink.requestLink);
+router.post("/email-link/verify", loginLinkLimit, loginLink.consumeLink);
 
 /* -------------------------------- */
 /* Authenticated account            */

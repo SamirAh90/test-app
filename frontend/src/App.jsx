@@ -12,6 +12,7 @@ import DemoTrainer from "./pages/DemoTrainer";
 import Results from "./pages/Results";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import EmailLinkLogin from "./pages/EmailLinkLogin";
 import MyTraining from "./pages/MyTraining";
 import SubjectTrainer from "./pages/SubjectTrainer";
 import SubjectEducation from "./pages/SubjectEducation";
@@ -19,6 +20,7 @@ import SubjectGlossary from "./pages/SubjectGlossary";
 import Glossary from "./pages/Glossary";
 import StudyMaterial from "./pages/StudyMaterial";
 import AboutTest from "./pages/AboutTest";
+import PublicGuide from "./pages/PublicGuide";
 import Premium from "./pages/Premium";
 import Account from "./pages/Account";
 
@@ -86,8 +88,15 @@ function App() {
           <Route path="/register" element={<Register />} />
 
           <Route path="/login" element={<Login />} />
+          <Route path="/login/email" element={<EmailLinkLogin />} />
 
           <Route path="/om-provet" element={<AboutTest />} />
+          <Route path="/studietips" element={<PublicGuide page="tips" />} />
+          <Route path="/provdatum" element={<PublicGuide page="dates" />} />
+          <Route path="/vanliga-fragor" element={<PublicGuide page="faq" />} />
+          <Route path="/medborgarskap" element={<PublicGuide page="citizenship" />} />
+          <Route path="/medborgarskap/krav" element={<PublicGuide page="requirements" />} />
+          <Route path="/medborgarskap/ansokan" element={<PublicGuide page="application" />} />
 
           <Route path="/premium" element={<Premium />} />
 

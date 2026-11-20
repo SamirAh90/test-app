@@ -1,4 +1,6 @@
 import { useState } from "react";
+import GoogleSignIn from "../../components/GoogleSignIn";
+import EmailLinkForm from "../../components/EmailLinkForm";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { useAuth } from "../../contexts/AuthContext";
@@ -96,6 +98,7 @@ function LoginSection() {
             <p>Fortsätt där du slutade och se dina sparade resultat.</p>
           </div>
 
+          <GoogleSignIn />
           <form className="login-form" onSubmit={handleSubmit} noValidate>
             <label className="login-field">
               <span>E-post</span>
@@ -135,6 +138,16 @@ function LoginSection() {
               )}
             </label>
 
+            <details className="login-password-help">
+              <summary>Glömt lösenord?</summary>
+              <p>
+                Du kan logga in med en engångslänk genom att välja
+                ”Logga in utan lösenord” nedan. Använd samma e-postadress som
+                när du skapade kontot. När du är inloggad kan du välja ett nytt
+                lösenord under Konto.
+              </p>
+            </details>
+
             <button
               className="login-button"
               type="submit"
@@ -149,6 +162,8 @@ function LoginSection() {
               </p>
             )}
           </form>
+
+          <EmailLinkForm />
 
           <p className="login-register">
             Har du inget konto?{" "}

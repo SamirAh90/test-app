@@ -1,131 +1,95 @@
-.hero {
-  background: #eef3f1;
-  padding: 72px 0;
+﻿.citizenship-hero { background: #f1f6f6; color: #101f32; padding: 54px 0 70px; }
+.citizenship-hero__layout { width: min(1240px, calc(100% - 80px)); margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 66px; }
+.citizenship-hero__main { min-width: 0; }
+.citizenship-hero__eyebrow { display: inline-block; margin-bottom: 16px; padding: 6px 13px; border-radius: 30px; background: #d6e5f5; font-size: 12px; line-height: 1.4; }
+.citizenship-hero__message h1 { margin: 0 0 21px; font-size: clamp(34px, 3.6vw, 50px); font-weight: 800; line-height: 1.08; letter-spacing: -.035em; color: #0e1b31; overflow-wrap: anywhere; }
+.citizenship-hero__message h1 span { color: #df9619; }
+.citizenship-hero__message > p { max-width: 530px; margin: 0; font-size: 17px; line-height: 1.65; }
+.citizenship-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.citizenship-hero__actions button { min-height: 46px; padding: 12px 19px; border-radius: 6px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.citizenship-hero__primary { background: #f3aa25; color: #101f32; border: 1px solid #e3a020; }
+.citizenship-hero__primary:hover { background: #efb649; }
+.citizenship-hero__secondary { background: transparent; color: #101f32; border: 1px solid #23384a; }
+.citizenship-hero__secondary:hover { background: #e3edef; }
+.citizenship-hero__benefits { display: flex; flex-wrap: wrap; gap: 12px 21px; list-style: none; margin: 23px 0 0; padding: 0; font-size: 12px; line-height: 1.6; }
+.citizenship-hero__benefits li { display: flex; align-items: center; gap: 6px; }
+.citizenship-hero__benefits li > span { display: grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; background: #579c95; color: white; font-size: 11px; flex-shrink: 0; }
+.citizenship-hero__visual { position: relative; min-width: 0; margin-inline-end: 30px; }
+.citizenship-hero__photo { display: block; width: 100%; height: 500px; object-fit: cover; object-position: 30% center; border-radius: 48px; }
+.citizenship-hero__quiz { position: absolute; inset-inline-end: -36px; bottom: -25px; width: 275px; max-width: 90%; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 7px 22px #18324d26; }
+.citizenship-hero__quiz-top { padding: 14px 16px; background: #337f95; color: white; }
+.citizenship-hero__quiz-top h2 { margin: 0; font-size: 14px; line-height: 1.5; font-weight: 500; }
+.citizenship-hero__quiz-body { padding: 16px; }
+.citizenship-hero__quiz-body h3 { margin: 0 0 12px; font-size: 15px; line-height: 1.4; }
+.citizenship-hero__answers { display: grid; gap: 7px; }
+.citizenship-hero__answers button { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 36px; padding: 7px 9px; border: 1px solid #d1d7db; border-radius: 6px; background: white; color: #16293a; font: inherit; font-size: 12px; text-align: start; cursor: pointer; }
+.citizenship-hero__answers button:hover { background: #edf5f6; }
+.citizenship-hero__radio { width: 13px; height: 13px; border: 1px solid #9aaab4; border-radius: 50%; flex-shrink: 0; }
+.citizenship-hero__answers .is-selected .citizenship-hero__radio { background: #337f95; box-shadow: inset 0 0 0 3px white; }
+.citizenship-hero__answers .is-correct { background: #d8ece8; border-color: #6ba39d; }
+.citizenship-hero__answers .is-incorrect { background: #fff1e7; border-color: #b6845e; }
+.citizenship-hero__feedback { margin: 10px 0 0; padding: 8px; border-radius: 5px; background: #f0f6e9; font-size: 12px; line-height: 1.5; }
+.citizenship-hero__quiz-link { padding: 0; margin-top: 13px; border: 0; background: transparent; color: #18384a; font: inherit; font-size: 12px; text-align: start; cursor: pointer; }
+.citizenship-hero button:focus-visible { outline: 3px solid #ca9717; outline-offset: 3px; }
+@media (max-width: 1100px) {
+ .citizenship-hero__layout { width: calc(100% - 56px); gap: 34px; }
+ .citizenship-hero__message h1 { font-size: 38px; }
+ .citizenship-hero__photo { height: 470px; border-radius: 38px; }
+ .citizenship-hero__visual { margin-inline-end: 14px; }
+ .citizenship-hero__quiz { inset-inline-end: -16px; }
+ .citizenship-hero__answers button { min-height: 44px; }
 }
-
-.hero-container {
-  width: min(1120px, calc(100% - 40px));
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
-  gap: 64px;
+@media (max-width: 850px) {
+ .citizenship-hero { padding: 34px 0 64px; }
+ .citizenship-hero__layout { grid-template-columns: minmax(0, 1fr); width: min(620px, calc(100% - 40px)); gap: 34px; }
+ .citizenship-hero__message h1 { font-size: clamp(34px, 6vw, 46px); }
+ .citizenship-hero__visual { margin-inline-end: 0; }
+ .citizenship-hero__photo { height: 440px; object-position: center; border-radius: 32px; }
+ .citizenship-hero__quiz { inset-inline-end: 12px; bottom: -28px; }
 }
-
-.hero-content h1 {
-  max-width: 650px;
-  margin: 18px 0;
-
-  font-size: clamp(42px, 6vw, 66px);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+@media (max-width: 420px) {
+ .citizenship-hero__layout { width: calc(100% - 32px); }
+ .citizenship-hero__photo { height: 410px; object-position: 32% center; }
+ .citizenship-hero__quiz { width: 250px; }
+ .citizenship-hero__quiz-body { padding: 13px; }
+ .citizenship-hero__message > p { font-size: 16px; }
+ .citizenship-hero__actions button { flex: 1; padding-inline: 12px; }
 }
-
-.hero-content p {
-  max-width: 600px;
-  margin: 0;
-
-  color: #52606d;
-  font-size: 18px;
-  line-height: 1.7;
+/* Restore the background-photo hero layout. */
+.citizenship-hero { width: 100%; margin-inline: auto; position: relative; isolation: isolate; background: #f7f9fb; color: #132b43; padding: 0 0 30px; }
+.citizenship-hero__backdrop { position: absolute; z-index: -1; top: 0; inset-inline: 0; width: min(1280px, 100%); margin-inline: auto; height: 500px; overflow: hidden; background: #dce5df; }
+.citizenship-hero__backdrop img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 45%; }
+.citizenship-hero__layout { width: min(1184px, calc(100% - 96px)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 48px; align-items: start; }
+.citizenship-hero__main { margin-top: 295px; max-width: 580px; min-width: 0; }
+.citizenship-hero__message { padding: 30px; border: 1px solid #80a6bd; outline: 3px solid #142e48; outline-offset: 2px; border-radius: 9px; background: #172e46; color: white; box-shadow: 0 12px 35px #0b203c24; }
+.citizenship-hero__message h1 { margin: 0 0 16px; font-size: 44px; line-height: 1.1; color: white; }
+.citizenship-hero__message h1 span { color: #73c7c9; }
+.citizenship-hero__message > p { font-size: 17px; color: #f1f5fa; }
+.citizenship-hero__primary { background: #f4c954; color: #142b41; border-color: #f4c954; }
+.citizenship-hero__primary:hover { background: #ffe08a; }
+.citizenship-hero__secondary { background: transparent; color: white; border-color: #d9e4ef; }
+.citizenship-hero__secondary:hover { background: #ffffff14; }
+.citizenship-hero__benefits li > span { background: #17688b; }
+.citizenship-hero__quiz { position: static; width: auto; max-width: none; margin-top: 76px; border-radius: 11px; }
+.citizenship-hero__quiz-top { padding: 17px 19px; background: #176b94; }
+.citizenship-hero__quiz-top > span { display: inline-block; border-radius: 20px; padding: 4px 9px; background: #ffffff20; font-size: 11px; }
+.citizenship-hero__quiz-top h2 { margin-top: 10px; }
+.citizenship-hero__quiz-body { padding: 19px; }
+.citizenship-hero__quiz-body h3 { font-size: 17px; }
+.citizenship-hero__answers button { min-height: 44px; font-size: 13px; }
+@media (max-width: 1100px) {
+ .citizenship-hero__backdrop { position: relative; z-index: auto; height: auto; aspect-ratio: 1376 / 768; }
+ .citizenship-hero__backdrop img { height: auto; }
+ .citizenship-hero__layout { position: relative; width: calc(100% - 48px); margin-top: -45px; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .citizenship-hero__main { margin-top: 0; max-width: none; }
+ .citizenship-hero__quiz { margin-top: 0; }
+ .citizenship-hero__message { padding: 24px; }
+ .citizenship-hero__message h1 { font-size: clamp(30px, 3.7vw, 40px); }
+ .citizenship-hero__message > p { font-size: 15px; }
 }
-
-.hero-badge {
-  display: inline-block;
-
-  padding: 8px 14px;
-  border-radius: 999px;
-
-  background: #dbe8e3;
-  color: #315c52;
-
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.primary-button,
-.secondary-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 12px 20px;
-  border-radius: 10px;
-
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.primary-button {
-  border: none;
-  background: #315c52;
-  color: #ffffff;
-}
-
-.secondary-button {
-  border: 1px solid #bcc8c4;
-  background: transparent;
-  color: #172033;
-}
-
-.hero-card {
-  padding: 28px;
-
-  border: 1px solid #e1e8e5;
-  border-radius: 20px;
-
-  background: #ffffff;
-  box-shadow: 0 24px 60px rgba(23, 32, 51, 0.12);
-}
-
-.hero-card-label {
-  color: #315c52;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.hero-card h2 {
-  margin: 16px 0 22px;
-  font-size: 24px;
-}
-
-.hero-answer {
-  padding: 14px 16px;
-  margin-top: 10px;
-
-  border: 1px solid #dfe5e3;
-  border-radius: 10px;
-
-  background: #ffffff;
-}
-
-.hero-answer-selected {
-  border-color: #315c52;
-  background: #e7f3ee;
-  color: #24473f;
-  font-weight: 700;
-}
-
-@media (max-width: 800px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero {
-    padding: 56px 0;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
+@media (max-width: 767px) {
+ .citizenship-hero__layout { width: calc(100% - 32px); grid-template-columns: minmax(0, 1fr); gap: 25px; margin-top: -25px; }
+ .citizenship-hero__message { padding: 23px; }
+ .citizenship-hero__message h1 { font-size: clamp(30px, 7vw, 38px); }
+ .citizenship-hero__quiz { max-width: 520px; width: 100%; justify-self: center; }
 }

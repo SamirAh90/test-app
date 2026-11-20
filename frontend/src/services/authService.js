@@ -1,5 +1,30 @@
 const API_BASE_URL = "http://localhost:5000/api";
 
+export async function requestEmailLink(email) {
+  const response = await fetch(`${API_BASE_URL}/auth/email-link`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+  return parseResponse(response);
+}
+
+export async function verifyEmailLink(token) {
+  const response = await fetch(`${API_BASE_URL}/auth/email-link/verify`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ token }),
+  });
+  return parseResponse(response);
+}
+
+export async function loginWithGoogle(credential) {
+  const response = await fetch(`${API_BASE_URL}/auth/google`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ credential }),
+  });
+  return parseResponse(response);
+}
+
 /* -------------------------------- */
 /* Parse API response               */
 /* -------------------------------- */

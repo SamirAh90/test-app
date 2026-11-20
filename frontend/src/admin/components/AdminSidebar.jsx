@@ -23,7 +23,7 @@ import TranslateRoundedIcon from "@mui/icons-material/TranslateRounded";
 
 import { NavLink } from "react-router-dom";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 
 const drawerWidth = 260;
 

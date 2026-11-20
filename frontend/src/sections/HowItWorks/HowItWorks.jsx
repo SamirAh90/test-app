@@ -1,51 +1,21 @@
-import "./HowItWorks.css";
+﻿import './HowItWorks.css';
+import { useTranslation } from 'react-i18next';
+import useAnalyticsSection from '../../hooks/useAnalyticsSection';
+import AcademicIcon from '../../components/AcademicIcon';
 
-import { useTranslation } from "react-i18next";
-
-import useAnalyticsSection from "../../hooks/useAnalyticsSection";
-
-const stepKeys = ["one", "two", "three", "four"];
-
-function HowItWorks() {
+export default function HowItWorks() {
   const { t } = useTranslation();
-
-  /* -------------------------------- */
-  /* Analytics                        */
-  /* -------------------------------- */
-
-  const sectionRef = useAnalyticsSection("landing_how_it_works_seen", {
-    section: "how_it_works",
-  });
-
+  const sectionRef = useAnalyticsSection('landing_how_it_works_seen', { section: 'how_it_works' });
+  const icons = ['language', 'material', 'smart'];
   return (
-    <section ref={sectionRef} className="how-it-works">
-      <div className="how-it-works__container">
-        <div className="how-it-works__header">
-          <span className="how-it-works__eyebrow">
-            {t("howItWorks.eyebrow")}
-          </span>
-
-          <h2>{t("howItWorks.title")}</h2>
-
-          <p>{t("howItWorks.description")}</p>
-        </div>
-
-        <div className="how-it-works__grid">
-          {stepKeys.map((stepKey, index) => (
-            <article className="how-it-works__card" key={stepKey}>
-              <span className="how-it-works__number">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-
-              <h3>{t(`howItWorks.steps.${stepKey}.title`)}</h3>
-
-              <p>{t(`howItWorks.steps.${stepKey}.description`)}</p>
-            </article>
-          ))}
-        </div>
+    <section ref={sectionRef} className="learning-steps" aria-label={t('hero.stepsTitle')}>
+      <div className="learning-steps__container">
+        {t('hero.steps', { returnObjects: true }).map((step, index) => <article key={step.title} className={`learning-steps__step learning-steps__step--${index + 1}`}>
+          <span className="learning-steps__icon"><AcademicIcon name={icons[index]} /></span>
+          <div><h2>{step.title}</h2><p>{step.description}</p></div>
+          {index < 2 && <span className="learning-steps__arrow" aria-hidden="true">→</span>}
+        </article>)}
       </div>
     </section>
   );
 }
-
-export default HowItWorks;

@@ -17,9 +17,9 @@
     "badge": "Förbered dig för medborgarskapsprovet",
     "titleLine1": "Lär dig om Sverige.",
     "titleLine2": "Träna inför provet.",
-    "description": "Öva på frågor om Sverige, demokrati, lag och rätt, historia och mycket mer. Få tydliga förklaringar och översättningar på ditt språk.",
+    "description": "Läs, lär och träna i din egen takt. Få tydliga förklaringar och välj det språk som hjälper dig att förstå.",
     "primaryButton": "Börja träna",
-    "secondaryButton": "Utforska studiematerial",
+    "secondaryButton": "Studiematerial",
     "previewSubject": "Landet Sverige",
     "previewQuestion": "Vilken är Sveriges huvudstad?",
     "previewAnswers": {
@@ -27,7 +27,47 @@
       "b": "Stockholm",
       "c": "Malmö",
       "d": "Uppsala"
-    }
+    },
+    "title": "Förbered dig inför medborgarskapsprovet",
+    "photoAlt": "Två vuxna läser och studerar tillsammans vid ett bord i ett ljust bibliotek.",
+    "imageMessage": "Lär dig på ditt språk",
+    "reassurance": [
+      "Träna i din egen takt",
+      "Förklaringar på flera språk"
+    ],
+    "stepsTitle": "Så kommer du igång",
+    "steps": [
+      {
+        "title": "Välj språk",
+        "description": "Lär dig på svenska eller få stöd på engelska, arabiska och persiska/dari."
+      },
+      {
+        "title": "Läs och förstå",
+        "description": "Utforska studiematerial och viktiga begrepp om Sverige."
+      },
+      {
+        "title": "Träna och följ din utveckling",
+        "description": "Öva med frågor och förklaringar. Spara dina resultat med ett konto."
+      }
+    ],
+    "banner": {
+      "headline": "Klara provet för",
+      "accent": "medborgarskap",
+      "lead": "Läs om Sverige och öva med frågor, tydliga förklaringar och provsimulering i din egen takt.",
+      "preview": "Prova en övningsfråga",
+      "example": "Exempel från träningen",
+      "correct": "Rätt! Stockholm är Sveriges huvudstad.",
+      "incorrect": "Inte riktigt. Sveriges huvudstad är Stockholm.",
+      "try": "Gör hela övningstestet",
+      "benefits": [
+        "13 ämnen att utforska",
+        "Förklaringar på flera språk",
+        "Träning i din egen takt"
+      ]
+    },
+    "premiumButton": "Se Premium",
+    "payment": "Engångsbetalning",
+    "notice": "Fristående tjänst – det officiella provet anordnas av UHR."
   },
   "stats": {
     "questions": "frågor i provet",
@@ -41,68 +81,55 @@
     "description": "Läs studiematerialet för varje ämne innan du börjar träna.",
     "start": "Läs mer",
     "showAll": "Visa allt studiematerial",
-
     "items": {
       "country": {
         "name": "Landet Sverige",
         "description": "Geografi, natur, klimat och Sveriges indelning."
       },
-
       "democracy": {
         "name": "Sveriges demokratiska system",
         "description": "Demokrati, folkstyre och hur demokratin skyddas."
       },
-
       "government": {
         "name": "Så här styrs Sverige",
         "description": "Riksdag, regering, regioner och kommuner."
       },
-
       "elections": {
         "name": "Politiska val och partier",
         "description": "Rösträtt, val och de politiska partierna."
       },
-
       "law": {
         "name": "Lag och rätt",
         "description": "Grundlagar, domstolar och rättssäkerhet."
       },
-
       "media": {
         "name": "Mediernas roll",
         "description": "Fria medier, journalistik och informationsspridning."
       },
-
       "rights": {
         "name": "Mänskliga rättigheter",
         "description": "Fri- och rättigheter i Sverige."
       },
-
       "economy": {
         "name": "Arbetsmarknad och privatekonomi",
         "description": "Arbete, ekonomi och att hantera sin privatekonomi."
       },
-
       "welfare": {
         "name": "Välfärdssamhället",
         "description": "Skola, vård och omsorg."
       },
-
       "history": {
         "name": "Sveriges moderna historia",
         "description": "Viktiga händelser i Sveriges moderna utveckling."
       },
-
       "world": {
         "name": "Sverige och omvärlden",
         "description": "Sveriges internationella samarbeten."
       },
-
       "religion": {
         "name": "En sekulär stat och ett mångreligiöst land",
         "description": "Religion, religionsfrihet och Sveriges sekulära stat."
       },
-
       "traditions": {
         "name": "Traditioner och högtider",
         "description": "Svenska traditioner och högtider."

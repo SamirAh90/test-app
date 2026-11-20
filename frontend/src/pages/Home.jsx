@@ -38,9 +38,9 @@ function Home() {
     >
       <PublicLayout>
         <Hero />
+        <HowItWorks />
         <Stats />
         <SubjectGrid />
-        <HowItWorks />
         <DemoQuestion />
         <Features />
         <FAQ />

@@ -4,6 +4,8 @@ import {
   deleteUserAccount,
   getCurrentUser,
   loginUser,
+  loginWithGoogle,
+  verifyEmailLink,
   registerUser,
   updateUserProfile,
 } from "../services/authService";
@@ -80,6 +82,18 @@ export function AuthProvider({ children }) {
   /* -------------------------------- */
   /* Login                            */
   /* -------------------------------- */
+
+  const emailLinkLogin = async (token) => {
+    const response = await verifyEmailLink(token);
+    saveSession(response);
+    return response;
+  };
+
+  const googleLogin = async (credential) => {
+    const response = await loginWithGoogle(credential);
+    saveSession(response);
+    return response;
+  };
 
   const login = async (credentials) => {
     const response = await loginUser(credentials);
@@ -181,6 +195,8 @@ export function AuthProvider({ children }) {
       register,
 
       login,
+      googleLogin,
+      emailLinkLogin,
 
       logout,
 

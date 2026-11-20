@@ -18,6 +18,7 @@ const router = express.Router();
 
 router.use(authMiddleware);
 router.use(requireAdmin);
+router.put('/announcement', require('../controllers/announcementController').updateAnnouncement);
 
 /* -------------------------------- */
 /* Settings routes                  */

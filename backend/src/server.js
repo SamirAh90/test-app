@@ -230,6 +230,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get('/api/public-settings/announcement', require('./controllers/announcementController').getAnnouncement);
 
 /* -------------------------------- */
 /* Public API                       */

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import AnnouncementSettings from '../components/AnnouncementSettings';
 
 import {
   Alert,
@@ -455,6 +456,8 @@ function AdminSettings() {
         {/* -------------------------------- */}
         {/* User cleanup                     */}
         {/* -------------------------------- */}
+
+        <AnnouncementSettings />
 
         <SettingsCard
           icon={<DeleteSweepRoundedIcon />}

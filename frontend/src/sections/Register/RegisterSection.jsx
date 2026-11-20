@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GoogleSignIn from "../../components/GoogleSignIn";
 import { Link, useNavigate } from "react-router-dom";
 import { saveQuizAttempt } from "../../services/progressService";
 import { useAuth } from "../../contexts/AuthContext";
@@ -133,6 +134,7 @@ function RegisterSection() {
             </p>
           </div>
 
+          <GoogleSignIn />
           <form className="register-form" onSubmit={handleSubmit} noValidate>
             <label className="register-field">
               <span>Förnamn</span>

@@ -17,9 +17,9 @@
     "badge": "Prepare for the citizenship test",
     "titleLine1": "Learn about Sweden.",
     "titleLine2": "Prepare for the test.",
-    "description": "Read study material and practice questions about Sweden, democracy, law and justice, history and much more. Get clear explanations and translations in your language.",
-    "primaryButton": "Start practicing",
-    "secondaryButton": "Explore study material",
+    "description": "Read, learn and practise at your own pace. Get clear explanations and choose the language that helps you understand.",
+    "primaryButton": "Start practising",
+    "secondaryButton": "Study material",
     "previewSubject": "Sweden as a country",
     "previewQuestion": "What is the capital of Sweden?",
     "previewAnswers": {
@@ -27,7 +27,47 @@
       "b": "Stockholm",
       "c": "Malmö",
       "d": "Uppsala"
-    }
+    },
+    "title": "Prepare for the citizenship test",
+    "photoAlt": "Two adults studying together at a table in a bright library.",
+    "imageMessage": "Learn in your language",
+    "reassurance": [
+      "Practise at your own pace",
+      "Explanations in several languages"
+    ],
+    "stepsTitle": "How to get started",
+    "steps": [
+      {
+        "title": "Choose your language",
+        "description": "Learn in Swedish with support in English, Arabic and Persian/Dari."
+      },
+      {
+        "title": "Read and understand",
+        "description": "Explore study material and key concepts about Sweden."
+      },
+      {
+        "title": "Practise and track your progress",
+        "description": "Practise with questions and explanations. Save results with an account."
+      }
+    ],
+    "banner": {
+      "headline": "Prepare for your",
+      "accent": "citizenship test",
+      "lead": "Learn about Sweden with practice questions, clear explanations and test simulations at your own pace.",
+      "preview": "Try a practice question",
+      "example": "Training preview",
+      "correct": "Correct! Stockholm is the capital of Sweden.",
+      "incorrect": "Not quite. The capital of Sweden is Stockholm.",
+      "try": "Take the full practice test",
+      "benefits": [
+        "13 topics to explore",
+        "Multilingual explanations",
+        "Practise at your own pace"
+      ]
+    },
+    "premiumButton": "Explore Premium",
+    "payment": "One-time payment",
+    "notice": "Independent service – the official test is organised by UHR."
   },
   "stats": {
     "questions": "questions in the test",

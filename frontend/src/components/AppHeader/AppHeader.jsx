@@ -3,7 +3,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import { useAuth } from "../../contexts/AuthContext";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 
 import "./AppHeader.css";
 

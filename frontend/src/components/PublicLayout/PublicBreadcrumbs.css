@@ -1,0 +1,11 @@
+.public-breadcrumbs { background: transparent; border: 0; color: #526c81; }
+.public-breadcrumbs nav { max-width: 1320px; margin: 0 auto; padding: 17px 28px; }
+.public-breadcrumbs ol { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 12px; list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.6; }
+.public-breadcrumbs li { display: inline-flex; align-items: center; gap: 12px; }
+.public-breadcrumbs li + li::before { content: '/'; color: #91a2af; }
+.public-breadcrumbs a { color: #185783; text-decoration: none; font-weight: 600; }
+.public-breadcrumbs a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.public-breadcrumbs [aria-current] { font-weight: 500; }
+.public-breadcrumbs a:focus-visible { outline: 3px solid #d5a600; outline-offset: 4px; border-radius: 2px; }
+@media (max-width: 1199px) { .public-breadcrumbs nav { padding-inline: 20px; } }
+@media (max-width: 480px) { .public-breadcrumbs nav { padding: 13px 14px; } }

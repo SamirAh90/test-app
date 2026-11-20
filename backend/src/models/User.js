@@ -29,6 +29,12 @@ const User = sequelize.define(
       },
     },
 
+    googleSubject: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: true,
+    },
+
     password: {
       type: DataTypes.STRING,
       allowNull: false,
